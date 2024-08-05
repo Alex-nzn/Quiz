@@ -1,0 +1,383 @@
+body {
+  font-family: sans-serif;
+  background-color: rgba(0, 128, 0, 0.653);
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(40, 142, 215);
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 250px auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+header {
+  border-bottom: 1px solid lightgray;
+  color: rgb(0, 100, 0);
+  font-size: 20px;
+}
+
+#img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 450px;
+}
+.main h3 {
+  padding: 5px 0px;
+}
+
+.card:last-child {
+  height: 602px;
+}
+
+.form {
+  width: 392px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form h3 {
+  padding: 0;
+}
+
+.form input {
+  height: 50px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 2px solid lightgrey;
+  padding-left: 14px;
+  font-size: 19px;
+}
+
+article:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.item {
+  padding: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /*width: 100%;*/
+}
+
+.item-king {
+  padding: 30px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  min-width: 206px;
+  min-height: 310px;
+  position: relative;
+  border-radius: 27px;
+  padding-top: 20px;
+}
+
+.items-king {
+  display: flex;
+  gap: 10px;
+}
+
+.item-king input {
+  position: absolute;
+  top: 19px;
+  left: 185px;
+  transform: scale(1.6);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  padding-top: 30px;
+}
+.progress {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.progress__head {
+  margin-bottom: 10px;
+}
+
+.progress__head span {
+  color: rgba(0, 128, 0, 0.653);
+  font-weight: 600;
+}
+
+.line {
+  height: 5px;
+  background-color: lightgray;
+  /*border-bottom: 5px solid gray;*/
+  width: 100%;
+  border-radius: 5px;
+}
+
+.line-active {
+  height: 5px;
+  /*border-bottom: 5px solid rgba(0, 128, 0, 0.653);*/
+  background-color: rgba(0, 128, 0, 0.653);
+  transition: all 0.5s ease-in;
+  width: 0%;
+  border-radius: 5px;
+}
+
+button {
+  width: 140px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.prev {
+  background-color: rgba(128, 128, 128, 0.841);
+  box-shadow: 2px 2px 5px rgba(208, 206, 206, 0.99);
+}
+.prev:hover {
+  background-color: rgba(128, 128, 128, 0.99);
+}
+.prev:active {
+  box-shadow: none;
+}
+
+.next {
+  background-color: rgba(0, 128, 0, 0.653);
+  box-shadow: 2px 2px 5px rgba(145, 197, 145, 0.735);
+}
+.next:enabled:hover {
+  background-color: rgba(0, 128, 0, 0.76);
+}
+.next:enabled:active {
+  box-shadow: none;
+}
+
+.required {
+  border: 1px solid red;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.card {
+  display: block;
+  /*display: none;*/
+  padding: 30px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  left: -30px;
+  transition: opacity 500ms cubic-bezier(0.335, 0.01, 0.03, 1.36),
+    visibility 500ms cubic-bezier(0.335, 0.01, 0.03, 1.36),
+    left 500ms cubic-bezier(0.335, 0.01, 0.03, 1.36);
+}
+
+#card3 .items {
+  display: flex;
+  flex-direction: unset;
+  margin-bottom: 15px;
+}
+
+#card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 472px;
+}
+
+#clap {
+  width: 77px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 52px;
+}
+
+#politica {
+  height: 50px;
+  line-height: 4.5;
+  font-size: 11px;
+}
+#politica input {
+  height: 14px;
+}
+
+#btn__form {
+  height: 56px;
+  width: 100%;
+  background-color: rgba(0, 128, 0, 0.653);
+  box-shadow: 2px 2px 5px rgba(145, 197, 145, 0.735);
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#btn__form:hover {
+  background-color: rgba(0, 128, 0, 0.76);
+}
+#btn__form:active {
+  box-shadow: none;
+}
+
+#img1 {
+  background: url(../img/bubni.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+#img2 {
+  background: url(../img/kresti.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+#img3 {
+  background-image: url(../img/chervi.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+#img4 {
+  background-image: url(../img/piki.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none !important;
+}
+/*
+.visible {
+  display: block;
+}
+*/
+.visible {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+
+/*-------------------------------Начальная страница-----------------------------*/
+.wrapper__start {
+  max-width: 1200px;
+  margin: 250px auto;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container__start {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 43px;
+  margin-top: 40px;
+}
+.block1 {
+  height: 90px;
+  width: 300px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  line-height: 6.5;
+  color: gray;
+  font-weight: 600;
+  font-size: 14px;
+}
+.block1:hover {
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  box-shadow: 0 0 3px grey;
+}
+.block1:active {
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  box-shadow: none;
+}
+.block2 {
+  height: 90px;
+  width: 300px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  line-height: 6.5;
+  color: gray;
+  font-weight: 600;
+  font-size: 14px;
+}
+.block2:hover {
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  box-shadow: 0 0 3px grey;
+}
+.block2:active {
+  box-shadow: none;
+}
+.text__start {
+  padding: 10px 200px 20px 200px;
+  color: gray;
+}
+.btn__start {
+  height: 50px;
+  width: 200px;
+  background-color: rgba(0, 128, 0, 0.653);
+  box-shadow: 2px 2px 5px rgba(145, 197, 145, 0.735);
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.btn__start:hover {
+  background-color: rgba(0, 128, 0, 0.76);
+}
+.btn__start:active {
+  box-shadow: none;
+}
+.img__start {
+  width: 150px;
+  margin-top: 75px;
+}
+
+.hovered {
+  border: 1px solid #c4e7c4;
+  border-radius: 4px;
+  padding: 8px 10px;
+
+  height: 50px;
+  line-height: 4.5;
+  font-size: 11px;
+}
